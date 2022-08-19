@@ -1,0 +1,10 @@
+div {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 0px;
+    background-color: bisque;
+}
+
+.colStyle {
+    background-color: aquamarine;
+}
