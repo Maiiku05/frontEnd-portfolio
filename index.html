@@ -6,46 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Document</title>
 </head>
-<body class="container">
-    <nav>
-        <div class="row">
-            <div class="col-2 colStyle">
-                <h1>Primera columna</h1>
+<body class="container-fluid fit">
+    
+
+    <div class="row fit d-flex" style="background-color: orange;">
+        <div class="col-sm-2 d- flex bubblegum">
+
+            <img src="rsc/img/APLogo-20-20.png" alt="Argentina Programa Logo" class="imgClass img-fluid">
+            <div class="col-sm d-flex justify-content-center">
+                <img src="rsc/img/facebook.png" alt="Facebook" class="rounded img-fluid iconClass img-sm">
+                <img src="rsc/img/Twitter.png" alt="Twitter" class="rounded img-fluid iconClass">
+                <img src="rsc/img/Linkedin.png" alt="Linkedin" class="rounded img-fluid iconClass">
+                
             </div>
-            <div class="col-6 colStyle">
-                <h1>Segunda columna</h1>
+            <a href="#modal" class="btn-open-popup"><img src="rsc/img/informacion.png" alt="+Info" class="rounded img-fluid info"></a>
+        
+            <div class="container-all" id="modal">
+
+                <div class="popup">
+                    <div class="container-text">
+                        <h4>iconos obtenidos de:</h4>
+                        <p><a href='https://.pngtree.com/so/Conjunto'>Conjunto png de .pngtree.com/</a><br><br>
+                        <a href="https://www.flaticon.es/iconos-gratis/informacion" title="información iconos">
+                            Información iconos creados por Freepik - Flaticon</a></p>
+                        <a href="#" class="btn-close-popup">X</a>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="col-4 colStyle">
-                <h1>Segunda columna</h1>
+        
+        
+        
+        </div>
+        <div class="col-sm" style="background-color: green;">
+            <div class="row lavender headerStyle" >
+                <div class="col-sm-6">
+                    <img src="#" alt="Foto Perfil" class="img-fluid">
+                </div>
+                <div class="col-sm-6">
+                    <h4>Acerca de mí</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus dicta enim perspiciatis laboriosam cupiditate, quae deserunt fugit minima esse modi, dolore eligendi, deleniti iusto dolorem. Culpa est in neque!</p>
+                    
+                </div>
+            </div>
+            <div class="row light bodyStyle">
+                
             </div>
         </div>
-    </nav>
-    <header class="row">
-        <div class="col-6">
-            <div class="col-2"><img src="#" alt="#"></div>
+    </div>
+
+    <footer class="row fixed-bottom lavender" >
+        <div class="col-sm-2">
+            <img src="#" alt="Contacto">
+            <h5>Contacto</h5>       
         </div>
-        <div class="col-6">
-            <h3>About me</h3>
-            <p>Description of myself S</p>
+        <div class="col-sm"></div>
+        <div class="col-sm-1">
+            <button class="btn btn-primary btn-sm">En</button>
+            <button class="btn btn-warning btn-sm">Es</button>        
         </div>
-    </header>
-    <div class="row">
-
-    </div>
-    <div class="row">
-
-    </div>
-    <div class="row">
-
-    </div>
-    <div class="row">
-
-    </div>
-    <footer class="row">
-
+        
     </footer>
+
+
+
+
+
+
+
+
+
+
     <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+
+    
+
 </body>
 </html>
