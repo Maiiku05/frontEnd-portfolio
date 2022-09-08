@@ -4,88 +4,326 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Document</title>
 </head>
-<body class="container-fluid fit">
+<body>
     
 
-    <div class="row fit d-flex" style="background-color: orange;">
-        <div class="col-sm-2 d- flex bubblegum">
+    <div class="container-fluid">
 
-            <img src="rsc/img/APLogo-20-20.png" alt="Argentina Programa Logo" class="imgClass img-fluid">
-            <div class="col-sm d-flex justify-content-center">
-                <img src="rsc/img/facebook.png" alt="Facebook" class="rounded img-fluid iconClass img-sm">
-                <img src="rsc/img/Twitter.png" alt="Twitter" class="rounded img-fluid iconClass">
-                <img src="rsc/img/Linkedin.png" alt="Linkedin" class="rounded img-fluid iconClass">
-                
-            </div>
-            <a href="#modal" class="btn-open-popup"><img src="rsc/img/informacion.png" alt="+Info" class="rounded img-fluid info"></a>
         
-            <div class="container-all" id="modal">
 
-                <div class="popup">
-                    <div class="container-text">
-                        <h4>iconos obtenidos de:</h4>
-                        <p><a href='https://.pngtree.com/so/Conjunto'>Conjunto png de .pngtree.com/</a><br><br>
-                        <a href="https://www.flaticon.es/iconos-gratis/informacion" title="información iconos">
-                            Información iconos creados por Freepik - Flaticon</a></p>
-                        <a href="#" class="btn-close-popup">X</a>
+
+                    <!--ROW 1---------------------------------------------------------------------------------------------->
+                    <div class="row p-5" id="education">
+                        <!--SECCCION EDUCACION--------------------------------------------------------------->
+                        <div class="text-center"><!--SECTION HEADER--------->
+                            <div class="block title-section"><h1>Educación</h1></div>
+                            <div class="block"><img src="rsc/img/underline.png" alt="" class="underline"></div>
+                        </div><!--END SECTION HEADER--------->
+
+                        <div class="col text-center"><!--CARD 1-->
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title m-1">Educación</h5>
+                                    <p class="card-text m-1">Educación secundaria</p>
+                                    <div class="icono"><ion-icon name="school"></ion-icon></div>
+                                    <a href="#" class="btn btnCard">+ Info</a>
+                            </div>
+                        </div>
+                        </div><!--END CARD 1-->
+                    
+                        <div class="col text-center"><!--CARD 2-->
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cursos</h5>
+                                    <p class="card-text">Cursos realizados</p>
+                                    <div class="icono"><ion-icon name="school"></ion-icon></div>
+                                    <a href="#" class="btn btnCard">+ Info</a>
+                            </div>
+                        </div>
+                        </div><!--END CARD 2-->
+
+
                     </div>
 
-                </div>
+                    <!--FIN ROW 1---------------------------------------------------------------------------------------------->
+                    <!--ROW 2---------------------------------------------------------------------------------------------->
 
-            </div>
-        
-        
-        
-        </div>
-        <div class="col-sm" style="background-color: green;">
-            <div class="row lavender headerStyle" >
-                <div class="col-sm-6">
-                    <img src="#" alt="Foto Perfil" class="img-fluid">
-                </div>
-                <div class="col-sm-6">
-                    <h4>Acerca de mí</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus dicta enim perspiciatis laboriosam cupiditate, quae deserunt fugit minima esse modi, dolore eligendi, deleniti iusto dolorem. Culpa est in neque!</p>
-                    
-                </div>
-            </div>
-            <div class="row light bodyStyle">
+                    <div class="row p-5" id="skills">
+
+                        <div class="text-center"><!--SECTION HEADER--------->
+                            <div class="block title-section"><h1>Habilidades</h1></div>
+                            <div class="block"><img src="rsc/img/underline.png" alt="" class="underline"></div>
+                        </div><!--END SECTION HEADER--------->
+
+                        <div class="col text-center"><!--COL 1 HARD HABILITIES-->
+
+                            <div class="modalOpen">
+                                <H5 class="pb-5">Tecnologías</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
                 
+                            <div class="modalOpen">
+                                <H5 class="pb-4">Lenguajes de Programación</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+                
+                            <div class="modalOpen">
+                                <H5 class="pb-5">Idiomas</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+                
+                            <div class="modalOpen">
+                                <H5 class="pb-4">Otras Habilidades</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+
+                        </div><!--END COL 1 HARD HABILITIES-->
+
+                        <div class="col text-center"><!--COL 1 SOFT HABILITIES-->
+
+                            <div class="modalOpen">
+                                <H5 class="pb-4">Trabajo en equipo</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+                
+                            <div class="modalOpen">
+                                <H5 class="pb-5">Creatividad</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+                
+                            <div class="modalOpen">
+                                <H5 class="pb-4">Actitud Positiva</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+                
+                            <div class="modalOpen">
+                                <H5 class="pb-4">Pensamiento Crítico</H5>
+                                <a href="#" class="btn">+ Info</a>
+                            </div>
+
+                        </div><!--END COL 1 DOFT HABILITIES-->
+                        
+                    </div>
+
+                    <!--FIN ROW 2---------------------------------------------------------------------------------------------->
+                    <!--ROW 3---------------------------------------------------------------------------------------------->
+
+                    <div class="row p-5" id="experience">
+
+                        <div class="col-12 text-center">
+
+                                <div class="text-center"><!--SECTION HEADER--------->
+                                    <div class="title-section"><h1>Experiencia</h1></div>
+                                    <div class=""><img src="rsc/img/underline.png" alt="" class="underline"></div>
+                                </div><!--END SECTION HEADER--------->
+
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="modalOpen ">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+                                    </div>
+                                </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!--FIN ROW 3---------------------------------------------------------------------------------------------->
+                    <!--ROW 4---------------------------------------------------------------------------------------------->
+
+                    <div class="row p-5" id="projects">
+
+                        <div class="col-12 text-center">
+
+                                <div class="text-center"><!--SECTION HEADER--------->
+                                    <div class="block title-section"><h1>Proyectos</h1></div>
+                                    <div class="block"><img src="rsc/img/underline.png" alt="" class="underline"></div>
+                                </div><!--END SECTION HEADER--------->
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                                <div class="minProjectBox">
+                                    <div class="d-flex w-100 h-100 align-items-center">
+                                    <a href="#" class="minProject"><img src="#" alt="Miniatura del proyecto"></a>
+                                    </div>
+                                </div>
+
+                        </div>
+                        
+                    </div>
+
+
+                     <!--FIN ROW 4---------------------------------------------------------------------------------------------->
+    
+                    
+                    <!--SIDEBAR NAVIGATION FOR SECTIONS------------------------------------------------------------------>
+                        <div class="sideBarNavSec d-none d-sm-flex top-50 start-100 translate-middle">
+                            <div class="btn-group-vertical " role="group" aria-label="Vertical button group">
+                            <a href="#education" role="button" class="btn btnBar"><ion-icon name="school"></ion-icon></a>
+                            <a href="#skills" role="button" class="btn btnBar"><ion-icon name="speedometer"></ion-icon></a>
+                            <a href="#experience" role="button" class="btn btnBar"><ion-icon name="rocket"></ion-icon></a>
+                            <a href="#projects" role="button" class="btn btnBar"><ion-icon name="cafe"></ion-icon></a>
+                            </div>
+                        </div>
+                    <!--SIDEBAR NAVIGATION FOR SECTIONS------------------------------------------------------------------>
+
+
+                    <!--SIDEBAR NAVIGATION FOR SECTIONS------------------------------------------------------------------>
+                    <div class="sideBarNavSecXS d-flex d-sm-none top-50 start-100 translate-middle">
+                        <div class="btn-group-vertical " role="group" aria-label="Vertical button group">
+                        <a href="#education" role="button" class="btn btnBarXS"><ion-icon name="school"></ion-icon></a>
+                        <a href="#skills" role="button" class="btn btnBarXS"><ion-icon name="speedometer"></ion-icon></a>
+                        <a href="#experience" role="button" class="btn btnBarXS"><ion-icon name="rocket"></ion-icon></a>
+                        <a href="#projects" role="button" class="btn btnBarXS"><ion-icon name="cafe"></ion-icon></a>
+                        </div>
+                    </div>
+                <!--SIDEBAR NAVIGATION FOR SECTIONS------------------------------------------------------------------>
+    
+                    
+                    <!--SIDEBAR -------------------------------------------------------------->
+            <div id="sidemenu" class="menu-collapsed">
+
+                <div id="header">
+
+                    <div id="title" class="">
+
+                        <div id="menu-btn" class="text-center">
+
+                            <ion-icon name="person" ></ion-icon>
+
+                        </div>
+
+                    </div>
+
+                    <div id="presentation" class="text-center">
+
+                        <img src="rsc/img/fotoPerfil.jpeg" alt="" class="portraitImage img-fluid rounded-circle">
+
+                        <h1 class="title">Una frase que me gusta</h1>
+
+                        <p class="frase">"una frase que me gusta mucho"</p>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
+        <!--END OF THE SIDEBAR-------------------------------------------------------------------------------->
+
+
+            <!--FOOTER------------------------------------------------------------------------------------------>-
+            <footer>
+                <nav class="navbar fixed-bottom navbar-dark bg-dark">
+                    <div class="container-fluid d-flex align-items-center">
+                            <div class="d-flex w-100">
+                                <a class="navbar-brand me-auto" href="#">CONTACTO</a>
+                                <img src="rsc/img/APLogo-20-20.png" alt="Argentina Programa Logo" class="argProg img-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><ion-icon name="logo-github"></ion-icon></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><ion-icon name="logo-discord"></ion-icon></a>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                    </div>
+                  </nav>
+            </footer>
+
+
+
     </div>
-
-    <footer class="row fixed-bottom lavender" >
-        <div class="col-sm-2">
-            <img src="#" alt="Contacto">
-            <h5>Contacto</h5>       
-        </div>
-        <div class="col-sm"></div>
-        <div class="col-sm-1">
-            <button class="btn btn-primary btn-sm">En</button>
-            <button class="btn btn-warning btn-sm">Es</button>        
-        </div>
-        
-    </footer>
-
-
-
-
-
-
-
 
 
 
     <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
-
-    
-
 </body>
 </html>

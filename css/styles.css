@@ -1,95 +1,323 @@
-html {
-height: 100%;
-}
-
-.imgClass {
-    width: 100%;
-}
-
-.fit {
-    height: 100%;
-    width: 100%;
+*{
     margin: 0%;
     padding: 0%;
 }
 
-div {
-    word-wrap: break-word;
+body {
+    background-image: url(../rsc/img/background2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.bubblegum {
-    background-color: #F08EB7;
+
+ /* START OF SCROLLBAR STYLES */
+body {
+    scrollbar-width: thin;         
+    scrollbar-color: black rgb(255, 94, 161);   /* scroll thumb and track */ 
+  }
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 94, 161);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 94, 161);  /* creates padding around scroll thumb */
+  }
+
+  /* END OF SCROLLBAR STYLES */
+
+  /* START OF MAIN SECTION STYLES */
+
+.title-section{
+    margin-top: 2%;
+    color: rgba(33, 37, 41, 1);
 }
-.lavender {
-    background-color: #C2B2FC;
+
+.underline{
+    width: 25%;
+
+}.card{
+    margin: 40px;
+    display: inline-block;
+    text-align: center;
+    border: 5px solid rgb(255, 94, 161);
 }
-.light {
+
+.icono{
+    font-size: 75px;
+    margin: 5%;
+}
+
+.modalOpen{
+    width: 150px;
+    height: 150px;
+    margin: 5%;
+    padding: 1%;
+    display: inline-block;
     background-color: white;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 94, 161);
+    overflow: hidden;
 }
 
-.iconClass {
-    height: 60px;
-    
+.modalOpen a {
+    background-color: rgba(33, 37, 41, 1);
+    color: white;
+    font-weight: 400;
 }
-.info {
-    height: 20px;
-    width: 20px;
+
+.modalOpen h5 {
+    color: rgba(33, 37, 41, 1);
+}
+
+.minProjectBox{
+    width: 250px;
+    height: 250px;
+    margin: 5%;
+    padding: 2%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 94, 161);
+    overflow: hidden;
+}
+
+.card{
+    background-color: white;
+    color: rgba(33, 37, 41, 1);
 }
 
 a {
     text-decoration: none;
 }
 
-.headerStyle {
-    height: 30%;
-}
-.bodyStyle {
-    height: 70%;
-}
+/* END OF MAIN SECTION STYLES */
 
-.container-all {
-    width: 100%;
-    height: 40%;
-    word-wrap: break-word;
-    border-radius: 10px;
-    padding: 10px 10px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 680ms;
 
-}
+/*
+START OF SIDEBAR SECTION NAVIGATION STYLES--------------------------------------------------------------------------------->
+*/
 
-.container-all:target {
-    background-color: rgba(118,96,138, 0.8);
-    visibility: visible;
-    opacity: 1;
+.sideBarNavSec{
+    position: fixed;
+    padding-right: 80px;
    
 }
 
-.container-text {
-    padding: 5px;
-    background-color: white;
-    border-radius: 10px;
-    word-wrap: break-word;
-}
-
-.container-text h4 {
-    font-family: sans-serif;
-    text-align: center;
-    color: #F08EB7;
-}
-
-.container-text p  a {
-    color: rgb(118, 96, 138);
-}
-
-.btn-close-popup {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(118, 96, 138);
-    padding: 5px 10px;
-    border-radius: 50px;
+.btnBar{
+    font-size: 45px;
     color: white;
+    background-color: rgb(255, 94, 161);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.btnBar:hover{
+    background-color: white;
+    color:rgb(255, 94, 161);
+}
+
+/* START OF SIDEBAR XS SIZE SECTION STYLES */
+.sideBarNavSecXS{
+    position: fixed;
+    padding-right: 60px;
+    
+}
+
+.btnBarXS{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(255, 94, 161);
+    margin-bottom: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.btnBarXS:hover{
+    background-color: white;
+    color:rgb(255, 94, 161);
+}
+/* START OF SIDEBAR MIN SECTION STYLES */
+
+
+/*
+END OF SIDEBAR SECTION NAVIGATION STYLES--------------------------------------------------------------------------------->
+*/
+
+
+/*
+    SIDEBAR LEFT-------------------------------------------------->
+*/
+
+/*VARIABLES*/
+:root{
+    --width: 400px;
+    --padding: 10px;
+    --bgcolor: rgba(33, 37, 41, 1);
+    --hovercolor: rgb(255, 94, 161);;
+    --width-collapsed: 50px;
+}
+/* ----------------------------- */
+body{
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded{
+    margin-left: var(--width);
+}
+
+#main-container{
+    color: rgb(29, 26, 27);
+}
+
+#sidemenu{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#sidemenu #header {
+    box-sizing: border-box;
+    
+}
+
+#sidemenu #header #title{
+    box-sizing: border-box;
+    
+}
+
+#menu-btn{
+    text-align: end;
+    border-radius: 50px;
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+
+#sidemenu #header #menu-btn {
+    /*cursor: pointer;*/
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#menu-btn:hover {
+    background-color: var(--hovercolor);
+}
+
+#presentation{
+    padding: 35px;
+}
+
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgb(255, 94, 161);
+}
+
+.menu-expanded #header #title {
+    text-align: end;
+    display: inline-block;
+    width: calc(100%);
+    margin-right: -5px;
+    padding: var(--padding);
 
 }
 
+.menu-expanded #presentation {
+    width: 100%;
+}
+
+.menu-collapsed{
+    width: var(--width-collapsed);
+    padding: 20px;
+}
+
+.menu-collapsed #presentation {
+    display: none;
+}
+
+.portraitImage {
+    width: 10rem;
+    border: 5px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+
+.title{
+color: rgb(255, 94, 161);
+}
+
+.frase{
+color: white;
+}
+/*
+
+END OF THE SIDEBAR LEFT ------------------------------------------------------------------------------------->
+
+*/
+
+/*
+
+START OF THE FOOTER ------------------------------------------------------------------------------------->
+
+*/
+
+.navbar{
+ background-color: rgb(255, 94, 161);
+    
+}
+
+.navbar-toggler{
+background-color: rgb(255, 94, 161);
+color: white;
+
+}
+
+.navbar-toggler:hover{
+    color: white;
+}
+
+.navbar-toggler:active{
+    color: white;
+}
+
+.navbar-brand{
+    background-color: rgb(255, 94, 161);
+    color: white;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 30%;
+    height: 5%;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+.nav-link{
+    font-size: 45px;
+    margin-left: 20px;
+}
+
+.argProg{
+    width: 12rem;
+    margin-right: 15px;
+}
+
+/*
+
+END OF THE FOOTER ------------------------------------------------------------------------------------->
+
+*/
